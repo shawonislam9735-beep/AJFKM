@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Achievements | Al Jameatul Falahia Kamil Madrasah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-brand">
+    <img src="images/logo.png" alt="Logo" class="nav-logo logo-img"/>
+    <div class="nav-name">
+      <span class="n1">Al Jameatul Falahia</span>
+      <span class="n2">Kamil Madrasah &middot; Feni</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="achievements.html">Achievements</a></li>
+    <li><a href="teachers.html">Teachers</a></li>
+    <li><a href="facilities.html">Facilities</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close">&#x2715;</button>
+  <a href="index.html" class="mob-link">Home</a>
+  <a href="about.html" class="mob-link">About</a>
+  <a href="achievements.html" class="mob-link">Results</a>
+  <a href="teachers.html" class="mob-link">Teachers</a>
+  <a href="facilities.html" class="mob-link">Facilities</a>
+  <a href="gallery.html" class="mob-link">Gallery</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="ph-bg" style="background-image:url('images/campus_ground.jpg');"></div>
+  <div class="ph-inner">
+    <span class="section-tag">Our Pride</span>
+    <h1>Achievements</h1>
+    <div class="breadcrumb"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Achievements</span></div>
+  </div>
+</div>
+
+<section style="background:var(--bg-light);">
+
+  <!-- ── Examination Results (top) ── -->
+  <div style="text-align:center;margin-bottom:40px;" class="reveal">
+    <span class="section-tag">Academic Performance</span>
+    <h2 class="section-title" style="margin:0 auto;">Examination Results</h2>
+    <div class="divider c"></div>
+  </div>
+
+  <div class="charts-grid reveal">
+    <div class="chart-card">
+      <div class="chart-head"><div><div class="chart-name">JDC Result</div><div class="chart-yr">2010 &ndash; 2019</div></div><div class="chart-pill">JDC</div></div>
+      <div class="cstats">
+        <div class="cst"><div class="cv">1,736</div><div class="cl">Appeared</div></div>
+        <div class="cst"><div class="cv">1,730</div><div class="cl">Passed</div></div>
+        <div class="cst hi"><div class="cv">99.65%</div><div class="cl">Pass Rate</div></div>
+        <div class="cst"><div class="cv">302</div><div class="cl">GPA-5</div></div>
+      </div>
+      <canvas id="jdcChart" height="140"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-head"><div><div class="chart-name">Dakhil Result</div><div class="chart-yr">2009 &ndash; 2025</div></div><div class="chart-pill">Dakhil</div></div>
+      <div class="cstats">
+        <div class="cst"><div class="cv">3,691</div><div class="cl">Appeared</div></div>
+        <div class="cst"><div class="cv">3,524</div><div class="cl">Passed</div></div>
+        <div class="cst hi"><div class="cv">95.48%</div><div class="cl">Pass Rate</div></div>
+        <div class="cst"><div class="cv">902</div><div class="cl">GPA-5</div></div>
+      </div>
+      <canvas id="dakhilChart" height="140"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-head"><div><div class="chart-name">Alim Result</div><div class="chart-yr">2009 &ndash; 2025</div></div><div class="chart-pill">Alim</div></div>
+      <div class="cstats">
+        <div class="cst"><div class="cv">4,086</div><div class="cl">Appeared</div></div>
+        <div class="cst"><div class="cv">3,987</div><div class="cl">Passed</div></div>
+        <div class="cst hi"><div class="cv">97.58%</div><div class="cl">Pass Rate</div></div>
+        <div class="cst"><div class="cv">627</div><div class="cl">GPA-5</div></div>
+      </div>
+      <canvas id="alimChart" height="140"></canvas>
+    </div>
+  </div>
+
+  <!-- ── Achievements Grid ── -->
+  <div style="text-align:center;margin:70px 0 40px;" class="reveal">
+    <span class="section-tag">Honour &amp; Excellence</span>
+    <h2 class="section-title" style="margin:0 auto;">Our Achievements</h2>
+    <div class="divider c"></div>
+  </div>
+
+  <div class="ach-grid reveal">
+
+    <!-- Best Institution Award 2026 -->
+    <div class="ach-card">
+      <img src="images/award.jpg" alt="Best Institution Award 2026" class="ach-img"/>
+      <div class="ach-body">
+        <div class="ach-row">
+          <div class="ach-ico"><i class="fas fa-university"></i></div>
+          <div class="ach-name">Best Institution Award — 2026</div>
+        </div>
+        <p class="ach-desc">Awarded by Islamic Arabic University, Dhaka &mdash; presented to Al Jamiatul Falahia Kamil Madrasah in recognition of outstanding commitment to academic excellence.</p>
+      </div>
+    </div>
+
+    <!-- #1 Ranking -->
+    <div class="ach-card">
+      <img src="images/ach_city.jpg" alt="#1 Madrasah in Feni District" class="ach-img"/>
+      <div class="ach-body">
+        <div class="ach-row">
+          <div class="ach-ico"><i class="fas fa-trophy"></i></div>
+          <div class="ach-name">#1 Madrasah in Feni District</div>
+        </div>
+        <p class="ach-desc">Ranked #1 among all madrasahs in Feni based on verified methodology &mdash; 44 public results from 2009 to 2025. Total students passed: <strong>9,241 / 9,513</strong>.</p>
+      </div>
+    </div>
+
+    <!-- 44th National Science & Technology Week -->
+    <div class="ach-card">
+      <img src="images/ach_sci44.jpg" alt="44th National Science &amp; Technology Week" class="ach-img"/>
+      <div class="ach-body">
+        <div class="ach-row">
+          <div class="ach-ico"><i class="fas fa-flask"></i></div>
+          <div class="ach-name">44th National Science &amp; Technology Week</div>
+        </div>
+        <p class="ach-desc">Students of Al Jameatul Falahia Kamil Madrasah participated and won recognition at the 44th National Science &amp; Technology Week, showcasing their innovative "Waste Recycling Process" project.</p>
+      </div>
+    </div>
+
+    <!-- National Science & Technology Week -->
+    <div class="ach-card">
+      <img src="images/ach_sci_nat.jpg" alt="National Science &amp; Technology Week" class="ach-img"/>
+      <div class="ach-body">
+        <div class="ach-row">
+          <div class="ach-ico"><i class="fas fa-atom"></i></div>
+          <div class="ach-name">National Science &amp; Technology Week</div>
+        </div>
+        <p class="ach-desc">Students earned certificates and accolades at the National Science &amp; Technology Week, demonstrating exceptional talent in science and innovation on a national stage.</p>
+      </div>
+    </div>
+
+    <!-- 46th National Science & Technology Fair -->
+    <div class="ach-card">
+      <img src="images/ach_sci46.jpg" alt="46th National Science &amp; Technology Fair — 2025" class="ach-img"/>
+      <div class="ach-body">
+        <div class="ach-row">
+          <div class="ach-ico"><i class="fas fa-microscope"></i></div>
+          <div class="ach-name">46th National Science &amp; Technology Fair — 2025</div>
+        </div>
+        <p class="ach-desc">Falahia students excelled at the 46th National Science &amp; Technology Week &amp; Science Fair 2025 (Senior Group), presenting the "Modern City and Village" project at the Upazila level, Feni Sadar.</p>
+      </div>
+    </div>
+
+    <!-- Best Red Crescent Institute 2024 & 2025 -->
+    <div class="ach-card">
+      <img src="images/ach_rcs_best.jpg" alt="Best Red Crescent Institute — 2024 &amp; 2025" class="ach-img"/>
+      <div class="ach-body">
+        <div class="ach-row">
+          <div class="ach-ico"><i class="fas fa-first-aid"></i></div>
+          <div class="ach-name">Best Red Crescent Institute — 2024 &amp; 2025</div>
+        </div>
+        <p class="ach-desc">Al Jameatul Falahia Kamil Madrasah was recognized as the Best Red Crescent Institute for two consecutive years — 2024 and 2025 &mdash; in recognition of outstanding humanitarian service and volunteerism.</p>
+      </div>
+    </div>
+
+  </div><!-- end ach-grid -->
+
+</section>
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="ft-logo">
+        <img src="images/logo.png" alt="Logo" class="logo-img"/>
+        <div class="ft-logo-txt">Al Jameatul Falahia<small>Kamil Madrasah &middot; Feni</small></div>
+      </div>
+      <p class="ft-desc">A premier Islamic educational institution in Feni, Bangladesh &mdash; providing quality Islamic and modern education since 1978. Ranked #1 Madrasah in Feni District.</p>
+      <div class="ft-social">
+        <a href="https://www.facebook.com/falahiafeni1978.edu.bd" target="_blank" rel="noopener" class="soc-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:falahiafenibd@gmail.com" class="soc-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="ft-col">
+      <h5>Quick Links</h5>
+      <ul class="ft-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About School</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="teachers.html">Our Teachers</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Contact Info</h5>
+      <ul class="ft-links">
+        <li><a href="tel:+8801309106629"><i class="fas fa-phone-alt" style="width:15px;"></i> 01309-106629</a></li>
+        <li><a href="mailto:falahiafenibd@gmail.com"><i class="fas fa-envelope" style="width:15px;"></i> falahiafenibd@gmail.com</a></li>
+        <li><a href="#"><i class="fas fa-map-marker-alt" style="width:15px;"></i> Falahia Lain, Feni Sadar</a></li>
+      </ul>
+      <div style="margin-top:22px;">
+        <div class="ft-arabic">&#x631;&#x64E;&#x628;&#x650;&#x651; &#x632;&#x650;&#x62F;&#x652;&#x646;&#x650;&#x64A; &#x639;&#x650;&#x644;&#x652;&#x645;&#x64B;&#x627;</div>
+        <div style="font-size:.68rem;color:rgba(255,255,255,.35);margin-top:4px;">Lord, increase me in knowledge</div>
+      </div>
+    </div>
+  </div>
+  <div class="ft-disclaimer-wrap"><p class="ft-disclaimer">&#9432; This is not the official website. Visit the official site at <a href="https://www.falahiafeni.edu.bd/" target="_blank" rel="noopener">www.falahiafeni.edu.bd</a></p></div>
+  <div class="ft-bottom">
+    <div class="ft-left"><p>&copy; 2026 Al Jameatul Falahia Kamil Madrasah, Feni. All rights reserved.</p></div>
+    <div class="ft-right"><p>Crafted by <strong>ASHRA</strong></p></div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('navbar');
+if(nav){
+  if(!document.getElementById('hero')) nav.classList.add('solid');
+  window.addEventListener('scroll',()=>{ nav.classList.toggle('scrolled',scrollY>60); },{passive:true});
+}
+const hbg=document.getElementById('hamburger');
+const mob=document.getElementById('mobileMenu');
+const mbc=document.getElementById('mobileClose');
+if(hbg) hbg.addEventListener('click',()=>mob.classList.add('open'));
+if(mbc) mbc.addEventListener('click',()=>mob.classList.remove('open'));
+document.querySelectorAll('.mob-link').forEach(a=>a.addEventListener('click',()=>mob&&mob.classList.remove('open')));
+const ro=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');ro.unobserve(x.target);}});},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+const pg=window.location.pathname.split('/').pop()||'index.html';
+document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===pg)a.classList.add('active');});
+document.querySelectorAll('.logo-img').forEach(el=>el.addEventListener('error',()=>{el.style.display='none';}));
+</script>
+
+<script>
+const co={plugins:{legend:{display:true,labels:{font:{size:10},color:'#5a7060',boxWidth:10,padding:8}}},scales:{x:{grid:{display:false},ticks:{font:{size:9},color:'#5a7060'}},y:{grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{size:9},color:'#5a7060'}}},responsive:true,maintainAspectRatio:true};
+new Chart(document.getElementById('jdcChart'),{type:'bar',data:{labels:['2019','2018','2017','2016','2015'],datasets:[{label:'Appeared',data:[180,180,165,190,185],backgroundColor:'rgba(99,174,215,.75)',borderRadius:3},{label:'Passed',data:[178,175,165,185,175],backgroundColor:'rgba(215,99,150,.75)',borderRadius:3},{label:'A+',data:[25,5,15,40,40],backgroundColor:'rgba(255,198,70,.85)',borderRadius:3}]},options:co});
+new Chart(document.getElementById('dakhilChart'),{type:'bar',data:{labels:['2025','2024','2023','2022','2021'],datasets:[{label:'Appeared',data:[335,305,295,255,250],backgroundColor:'rgba(99,174,215,.75)',borderRadius:3},{label:'Passed',data:[270,295,285,241,248],backgroundColor:'rgba(215,99,150,.75)',borderRadius:3},{label:'A+',data:[45,55,90,110,70],backgroundColor:'rgba(255,198,70,.85)',borderRadius:3}]},options:co});
+new Chart(document.getElementById('alimChart'),{type:'bar',data:{labels:['2025','2024','2023','2022','2021'],datasets:[{label:'Appeared',data:[305,245,265,270,200],backgroundColor:'rgba(99,174,215,.75)',borderRadius:3},{label:'Passed',data:[310,245,215,215,185],backgroundColor:'rgba(215,99,150,.75)',borderRadius:3},{label:'A+',data:[40,55,60,55,40],backgroundColor:'rgba(255,198,70,.85)',borderRadius:3}]},options:co});
+</script>
+</body>
+</html>

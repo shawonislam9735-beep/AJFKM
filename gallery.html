@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Gallery | Al Jameatul Falahia Kamil Madrasah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-brand">
+    <img src="images/logo.png" alt="Logo" class="nav-logo logo-img"/>
+    <div class="nav-name">
+      <span class="n1">Al Jameatul Falahia</span>
+      <span class="n2">Kamil Madrasah &middot; Feni</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="achievements.html">Achievements</a></li>
+    <li><a href="teachers.html">Teachers</a></li>
+    <li><a href="facilities.html">Facilities</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close">&#x2715;</button>
+  <a href="index.html" class="mob-link">Home</a>
+  <a href="about.html" class="mob-link">About</a>
+  <a href="achievements.html" class="mob-link">Results</a>
+  <a href="teachers.html" class="mob-link">Teachers</a>
+  <a href="facilities.html" class="mob-link">Facilities</a>
+  <a href="gallery.html" class="mob-link">Gallery</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="ph-bg" style="background-image:url('images/corridor.jpg');"></div>
+  <div class="ph-inner">
+    <span class="section-tag">Campus Life</span>
+    <h1>Photo Gallery</h1>
+    <div class="breadcrumb"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Gallery</span></div>
+  </div>
+</div>
+
+<section style="background:var(--bg-light);">
+  <div style="text-align:center;margin-bottom:36px;" class="reveal">
+    <p class="lead" style="text-align:center;margin:0 auto;">A glimpse into life at Al Jameatul Falahia &mdash; vibrant events, dedicated students, and a beautiful campus.</p>
+  </div>
+  <div class="filter-row reveal">
+    <button class="fbtn active" data-gal="all">All Photos</button>
+    <button class="fbtn" data-gal="campus">Campus</button>
+        <button class="fbtn" data-gal="activities">Events &amp; Activities</button>
+  </div>
+  <div class="gal-grid reveal" id="galGrid">
+    <div class="gal-item" data-cat="campus"><img src="images/hero.jpg" alt="Campus Stormy Evening" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Campus &mdash; Stormy Evening</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="campus"><img src="images/aerial.jpg" alt="Aerial Campus View" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Campus &mdash; Aerial View</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="campus"><img src="images/building_front.jpg" alt="Main Building" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Main Academic Building</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="campus"><img src="images/building_grass.jpg" alt="Building Through Grass" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Campus &mdash; Through the Green</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="campus"><img src="images/gate.jpg" alt="Main Gate" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Main Entrance Gate</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="campus"><img src="images/campus_ground.jpg" alt="Campus Ground" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Campus Ground Area</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="campus"><img src="images/corridor.jpg" alt="Corridor" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Building Corridors</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/ev_annual_prize2.jpg" alt="Annual Prize Distribution & Farewell Ceremony" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Annual Prize Distribution &amp; Farewell Ceremony</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/classroom.jpg" alt="Classroom Session" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Classroom Session</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/farewell.jpg" alt="Farewell 2023" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Farewell Ceremony &mdash; Alim Batch 2023</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/math_festival.jpg" alt="Math Festival 2018" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Math Festival 2018</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/parent_assembly.jpg" alt="Parent Assembly" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Parent Assembly</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/football.jpg" alt="Football Match" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Football in the Rain</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/act_1.jpg" alt="Annual Prize Ceremony" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Annual Prize Ceremony</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/act_2.jpg" alt="Annual Prize Ceremony — Stage" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Annual Prize Ceremony — Stage</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/act_3.jpg" alt="Annual Prize Ceremony — Dais" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Annual Prize Ceremony — Dais</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/act_5.jpg" alt="Academic Seminar" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Academic Seminar</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/ev_prize.jpg" alt="Annual Honours Ceremony" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Annual Honours Ceremony — Kriti Shikkharthi</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/ev_book.jpg" alt="Book Festival 2024" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Book Festival 2024 — Boi Utshob</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/ev_rally.jpg" alt="Dengue Awareness Rally" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Dengue Awareness Rally — 2023</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+    <div class="gal-item" data-cat="activities"><img src="images/ev_freshers.jpg" alt="Freshers' Welcome Ceremony" loading="lazy"/><div class="gal-ov"><span class="gal-cap">Freshers' Welcome Ceremony</span><span class="gal-zoom"><i class="fas fa-expand"></i></span></div></div>
+  </div>
+</section>
+
+<div id="lb">
+  <button id="lb-close" aria-label="Close">&#x2715;</button>
+  <img id="lb-img" src="" alt="Gallery Image"/>
+  <div id="lb-cap"></div>
+</div>
+
+<!-- CO-CURRICULAR ACTIVITIES -->
+<section class="cocurr-section">
+  <div class="cocurr-intro reveal">
+    <span class="section-tag">Beyond the Classroom</span>
+    <h2 class="section-title" style="margin:0 auto;">Co-Curricular Activities</h2>
+    <div class="divider c"></div>
+    <p class="lead" style="text-align:center;margin:0 auto;">Our students grow beyond academics through a rich array of co-curricular activities that build leadership, creativity, and community spirit.</p>
+  </div>
+
+  <!-- Red Crescent Society -->
+  <div class="cocurr-sub reveal">
+    <div class="cocurr-sub-head">
+      <div class="cocurr-ico"><i class="fas fa-first-aid"></i></div>
+      <span class="cocurr-sub-title">Red Crescent Society</span>
+      <span class="cocurr-sub-count">10 Photos</span>
+    </div>
+    <div class="cocurr-grid">
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/rcs_1.jpg" alt="Red Crescent Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Youth Chief Farewell</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/rcs_3.jpg" alt="Red Crescent Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>First Aid Training — RC/RC Basic (Team Photo)</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/rcs_4.jpg" alt="Red Crescent Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Annual Report Presentation 2025</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/rcs_5.jpg" alt="Red Crescent Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>RCY Activity</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/rcs_6.jpg" alt="Red Crescent Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Iftar Distribution</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/rcs_7.jpg" alt="Red Crescent Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Eid Gift Distribution</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/rcs_8.jpg" alt="Red Crescent Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Team Activity</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/rcs_9.jpg" alt="Red Crescent Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Admission Test Day (Outside)</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/rcs_10.jpg" alt="Red Crescent Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Admission Test Day (Inside)</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/rcs_11.jpg" alt="Red Crescent Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>First Aid Treatment</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wall Magazine -->
+  <div class="cocurr-sub reveal">
+    <div class="cocurr-sub-head">
+      <div class="cocurr-ico"><i class="fas fa-newspaper"></i></div>
+      <span class="cocurr-sub-title">Wall Magazine</span>
+      <span class="cocurr-sub-count">6 Photos</span>
+    </div>
+    <div class="cocurr-grid">
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/wm_1.jpg" alt="Wall Magazine" loading="lazy"/>
+        <div class="cocurr-ov"><span>Arabic Wall Magazine Display</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/wm_2.jpg" alt="Wall Magazine" loading="lazy"/>
+        <div class="cocurr-ov"><span>Student Preparing the Magazine</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/wm_3.jpg" alt="Wall Magazine" loading="lazy"/>
+        <div class="cocurr-ov"><span>Cover Artwork &mdash; Sautul Jamiaa</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/wm_4.jpg" alt="Wall Magazine" loading="lazy"/>
+        <div class="cocurr-ov"><span>Ek Nojore July &mdash; Wall Magazine</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/wm_5.jpg" alt="Wall Magazine" loading="lazy"/>
+        <div class="cocurr-ov"><span>Ek Nojore July &mdash; Full View</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/wm_6.jpg" alt="Wall Magazine" loading="lazy"/>
+        <div class="cocurr-ov"><span>President of the Governing Body — Reviewing the Magazine</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Falahia Debating Society -->
+  <div class="cocurr-sub reveal">
+    <div class="cocurr-sub-head">
+      <div class="cocurr-ico"><i class="fas fa-microphone-alt"></i></div>
+      <span class="cocurr-sub-title">Falahia Debating Society</span>
+      <span class="cocurr-sub-count">7 Photos</span>
+    </div>
+    <div class="cocurr-grid">
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/fds_1.jpg" alt="Falahia Debating Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Debate Award Ceremony</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/fds_2.jpg" alt="Falahia Debating Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Debating Session — Torkobane Orko 1.0</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/fds_3.jpg" alt="Falahia Debating Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Debating Team Group Photo</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/fds_4.jpg" alt="Falahia Debating Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Torkobane Orko 1.0 — Session</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/fds_5.jpg" alt="Falahia Debating Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Inauguration &amp; Debate Adda 2025</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/fds_6.jpg" alt="Falahia Debating Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Outdoor Debate Round</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/fds_7.jpg" alt="Falahia Debating Society" loading="lazy"/>
+        <div class="cocurr-ov"><span>Prize Giving Ceremony</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sports -->
+  <div class="cocurr-sub reveal">
+    <div class="cocurr-sub-head">
+      <div class="cocurr-ico"><i class="fas fa-futbol"></i></div>
+      <span class="cocurr-sub-title">Sports</span>
+      <span class="cocurr-sub-count">7 Photos</span>
+    </div>
+    <div class="cocurr-grid">
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/sp_1.jpg" alt="Sports" loading="lazy"/>
+        <div class="cocurr-ov"><span>Sprint Race Start</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/sp_2.jpg" alt="Sports" loading="lazy"/>
+        <div class="cocurr-ov"><span>Game on Campus Ground</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/sp_3.jpg" alt="Sports" loading="lazy"/>
+        <div class="cocurr-ov"><span>Annual Sports &mdash; Badminton</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/sp_4.jpg" alt="Sports" loading="lazy"/>
+        <div class="cocurr-ov"><span>Campus Sports Day</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/sp_5.jpg" alt="Sports" loading="lazy"/>
+        <div class="cocurr-ov"><span>Running Race</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/sp_6.jpg" alt="Sports" loading="lazy"/>
+        <div class="cocurr-ov"><span>Football in the Rain</span></div>
+      </div>
+      <div class="cocurr-img" onclick="openLb(this)">
+        <img src="images/sp_7.jpg" alt="Sports" loading="lazy"/>
+        <div class="cocurr-ov"><span>Football Match Day</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="ft-logo">
+        <img src="images/logo.png" alt="Logo" class="logo-img"/>
+        <div class="ft-logo-txt">Al Jameatul Falahia<small>Kamil Madrasah &middot; Feni</small></div>
+      </div>
+      <p class="ft-desc">A premier Islamic educational institution in Feni, Bangladesh &mdash; providing quality Islamic and modern education since 1978. Ranked #1 Madrasah in Feni District.</p>
+      <div class="ft-social">
+        <a href="https://www.facebook.com/falahiafeni1978.edu.bd" target="_blank" rel="noopener" class="soc-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:falahiafenibd@gmail.com" class="soc-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="ft-col">
+      <h5>Quick Links</h5>
+      <ul class="ft-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About School</a></li>
+        <li><a href="achievements.html">Achievements &amp; Results</a></li>
+        <li><a href="teachers.html">Our Teachers</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Contact Info</h5>
+      <ul class="ft-links">
+        <li><a href="tel:+8801309106629"><i class="fas fa-phone-alt" style="width:15px;"></i> 01309-106629</a></li>
+        <li><a href="mailto:falahiafenibd@gmail.com"><i class="fas fa-envelope" style="width:15px;"></i> falahiafenibd@gmail.com</a></li>
+        <li><a href="#"><i class="fas fa-map-marker-alt" style="width:15px;"></i> Falahia Lain, Feni Sadar</a></li>
+      </ul>
+      <div style="margin-top:22px;">
+        <div class="ft-arabic">&#x631;&#x64E;&#x628;&#x650;&#x651; &#x632;&#x650;&#x62F;&#x652;&#x646;&#x650;&#x64A; &#x639;&#x650;&#x644;&#x652;&#x645;&#x64B;&#x627;</div>
+        <div style="font-size:.68rem;color:rgba(255,255,255,.35);margin-top:4px;">Lord, increase me in knowledge</div>
+      </div>
+    </div>
+  </div>
+  <div class="ft-disclaimer-wrap"><p class="ft-disclaimer">&#9432; This is not the official website. Visit the official site at <a href="https://www.falahiafeni.edu.bd/" target="_blank" rel="noopener">www.falahiafeni.edu.bd</a></p></div>
+  <div class="ft-bottom">
+    <div class="ft-left"><p>&copy; 2026 Al Jameatul Falahia Kamil Madrasah, Feni. All rights reserved.</p></div>
+    <div class="ft-right"><p>Crafted by <strong>ASHRA</strong></p></div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('navbar');
+if(nav){
+  if(!document.getElementById('hero')) nav.classList.add('solid');
+  window.addEventListener('scroll',()=>{ nav.classList.toggle('scrolled',scrollY>60); },{passive:true});
+}
+const hbg=document.getElementById('hamburger');
+const mob=document.getElementById('mobileMenu');
+const mbc=document.getElementById('mobileClose');
+if(hbg) hbg.addEventListener('click',()=>mob.classList.add('open'));
+if(mbc) mbc.addEventListener('click',()=>mob.classList.remove('open'));
+document.querySelectorAll('.mob-link').forEach(a=>a.addEventListener('click',()=>mob&&mob.classList.remove('open')));
+const ro=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');ro.unobserve(x.target);}});},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+const pg=window.location.pathname.split('/').pop()||'index.html';
+document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===pg)a.classList.add('active');});
+document.querySelectorAll('.logo-img').forEach(el=>el.addEventListener('error',()=>{el.style.display='none';}));
+</script>
+
+<script>
+const galGrid=document.getElementById('galGrid');
+const allGalItems=[...document.querySelectorAll('.gal-item')];
+document.querySelectorAll('.fbtn[data-gal]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.fbtn[data-gal]').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const c=btn.dataset.gal;
+    galGrid.innerHTML='';
+    allGalItems.forEach(it=>{ if(c==='all'||it.dataset.cat===c) galGrid.appendChild(it); });
+  });
+});
+const lb=document.getElementById('lb');
+const lbImg=document.getElementById('lb-img');
+const lbCap=document.getElementById('lb-cap');
+document.querySelectorAll('.gal-item').forEach(it=>{
+  it.addEventListener('click',()=>{
+    lbImg.src=it.querySelector('img').src;
+    lbCap.textContent=it.querySelector('.gal-cap')?.textContent||'';
+    lb.classList.add('open'); document.body.style.overflow='hidden';
+  });
+});
+document.getElementById('lb-close').addEventListener('click',()=>{lb.classList.remove('open');document.body.style.overflow='';});
+lb.addEventListener('click',e=>{if(e.target===lb){lb.classList.remove('open');document.body.style.overflow='';}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){lb.classList.remove('open');document.body.style.overflow='';}});
+function openLb(el){
+  const img=el.querySelector('img');
+  const cap=el.querySelector('.cocurr-ov span');
+  lbImg.src=img.src;
+  lbCap.textContent=cap?cap.textContent:'';
+  lb.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+</script>
+</body>
+</html>
